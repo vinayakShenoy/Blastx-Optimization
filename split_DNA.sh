@@ -12,7 +12,6 @@ count=$(wc -m < tempProt.txt)        									#wordcount
 
 
 #splitting the dna sequence into 8 parts 
-#696969
 sed '1d' 8Million_DNA.fa > temp_DNA.txt      					                                 
 split -n 8  -d temp_DNA.txt DNA_split_sequence
 
